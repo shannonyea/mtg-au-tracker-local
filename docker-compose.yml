@@ -56,7 +56,7 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.dev
-    command: sh -c "pnpm install && pnpm --filter @mtg-au/web dev"
+    command: sh -c "pnpm install && pnpm --filter @mtg-au/web dev add pino"
     ports:
       - "3000:3000"
     volumes:
